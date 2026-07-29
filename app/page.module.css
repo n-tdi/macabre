@@ -57,10 +57,18 @@
 }
 
 .header {
-  position: absolute;
+  position: fixed;
   z-index: 20;
   inset: 0 0 auto;
   border-bottom: 1px solid rgba(233, 220, 193, 0.14);
+  background: rgba(7, 10, 8, 0.78);
+  backdrop-filter: blur(0.75rem);
+  transition: transform 220ms ease;
+  will-change: transform;
+}
+
+.headerHidden {
+  transform: translateY(-100%);
 }
 
 .headerInner {
@@ -95,7 +103,7 @@
 .nav {
   display: flex;
   align-items: center;
-  gap: 0.7rem;
+  gap: 1rem;
   font-size: 0.57rem;
   font-weight: 700;
   letter-spacing: 0.13em;
@@ -103,7 +111,10 @@
 }
 
 .nav a {
-  padding-block: 0.75rem;
+  min-height: 2.75rem;
+  padding: 0.75rem 0.25rem;
+  display: inline-flex;
+  align-items: center;
   transition: color 180ms ease;
 }
 
@@ -876,6 +887,7 @@
 }
 
 @media (prefers-reduced-motion: reduce) {
+  .header,
   .skipLink,
   .primaryButton,
   .textButton,

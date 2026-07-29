@@ -2,10 +2,55 @@ import Image from "next/image";
 
 import menuItems from "@/public/coursel/meta.json";
 
+import Header from "./header";
 import styles from "./page.module.css";
+import {
+  email,
+  instagramUrl,
+  legalName,
+  siteDescription,
+  siteName,
+  siteUrl,
+} from "./site";
 
-const email = "macabreandcheesetruck@gmail.com";
-const instagramUrl = "https://www.instagram.com/macabreandcheesetruck/";
+const structuredData = {
+  "@context": "https://schema.org",
+  "@graph": [
+    {
+      "@type": "Organization",
+      "@id": `${siteUrl}/#organization`,
+      name: siteName,
+      legalName,
+      url: siteUrl,
+      logo: {
+        "@type": "ImageObject",
+        url: `${siteUrl}/android-chrome-512x512.png`,
+        width: 512,
+        height: 512,
+      },
+      description: siteDescription,
+      email,
+      contactPoint: {
+        "@type": "ContactPoint",
+        contactType: "customer service",
+        email,
+      },
+      sameAs: [instagramUrl],
+    },
+    {
+      "@type": "WebSite",
+      "@id": `${siteUrl}/#website`,
+      url: siteUrl,
+      name: siteName,
+      alternateName: "Macabre and Cheese",
+      description: siteDescription,
+      inLanguage: "en-US",
+      publisher: {
+        "@id": `${siteUrl}/#organization`,
+      },
+    },
+  ],
+};
 
 function ArrowIcon() {
   return (
@@ -46,26 +91,18 @@ function MoonMark() {
 export default function Home() {
   return (
     <div className={styles.page} id="top">
+      <script
+        type="application/ld+json"
+        dangerouslySetInnerHTML={{
+          __html: JSON.stringify(structuredData).replace(/</g, "\\u003c"),
+        }}
+      />
+
       <a className={styles.skipLink} href="#creations">
         Skip to our creations
       </a>
 
-      <header className={styles.header}>
-        <div className={styles.headerInner}>
-          <a className={styles.brand} href="#top" aria-label="Macabre and Cheese, home">
-            <span className={styles.brandName}>
-              Macabre <i>&amp;</i> Cheese
-            </span>
-          </a>
-
-          <nav className={styles.nav} aria-label="Main navigation">
-            <a href="#creations">Creations</a>
-            <a className={styles.navContact} href="#contact">
-              Summon us
-            </a>
-          </nav>
-        </div>
-      </header>
+      <Header />
 
       <main>
         <section className={styles.hero} aria-labelledby="hero-title">

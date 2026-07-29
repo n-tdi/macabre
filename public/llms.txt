@@ -1,0 +1,35 @@
+# Macabre & Cheese
+
+> Macabre & Cheese is a coming-soon gothic food truck serving inventive mac and cheese, cheesecakes, and playful comfort food.
+
+Canonical website: https://macabreandcheese.com
+
+## Business
+
+- Legal name: Macabre & Cheese LLC
+- Status: Coming soon; no launch date has been announced
+- Service areas: Not yet announced
+- Cuisine: Mac and cheese, cheesecake, and gothic-inspired comfort food
+- Tagline: Eat your feelings. Feed your shadows.
+
+## Menu Preview
+
+- Witches Biscoff Brew: A spiced speculoos cheesecake sealed in a cookie crust.
+- The Classic Fairytale: A vanilla bean cheesecake in a golden graham cracker crust.
+- The Stout Friar: Mac and cheese with Cotswold cheddar, truffle cheese, and stout béchamel.
+- The Slayer: Mozzarella-provolone mac and cheese with San Marzano tomato and roasted garlic sauce.
+
+The displayed menu is a preview and may change before launch.
+
+## Official Links
+
+- Website: https://macabreandcheese.com
+- Menu preview: https://macabreandcheese.com/#creations
+- Contact and booking inquiries: https://macabreandcheese.com/#contact
+- Instagram: https://www.instagram.com/macabreandcheesetruck/
+- Email: mailto:macabreandcheesetruck@gmail.com
+
+## Crawling
+
+- Sitemap: https://macabreandcheese.com/sitemap.xml
+- Robots policy: https://macabreandcheese.com/robots.txt
