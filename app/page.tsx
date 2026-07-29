@@ -79,6 +79,14 @@ function InstagramIcon() {
   );
 }
 
+function SwipeIcon() {
+  return (
+    <svg aria-hidden="true" viewBox="0 0 24 12">
+      <path d="M1 6h22M5 2 1 6l4 4M19 2l4 4-4 4" />
+    </svg>
+  );
+}
+
 function MoonMark() {
   return (
     <svg aria-hidden="true" viewBox="0 0 120 120">
@@ -199,7 +207,7 @@ export default function Home() {
 
             <div className={styles.carouselMeta}>
               <p>
-                <span aria-hidden="true">↔</span> Swipe or drag to explore
+                <SwipeIcon /> Swipe or drag to explore
               </p>
               <nav className={styles.carouselDots} aria-label="Choose a featured creation">
                 {menuItems.map((item, index) => (
