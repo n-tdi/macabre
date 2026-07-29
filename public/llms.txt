@@ -2,7 +2,7 @@
 
 > Macabre & Cheese is a coming-soon gothic food truck serving inventive mac and cheese, cheesecakes, and playful comfort food.
 
-Canonical website: https://macabreandcheese.com
+Canonical website: https://www.macabreandcheese.com
 
 ## Business
 
@@ -23,13 +23,13 @@ The displayed menu is a preview and may change before launch.
 
 ## Official Links
 
-- Website: https://macabreandcheese.com
-- Menu preview: https://macabreandcheese.com/#creations
-- Contact and booking inquiries: https://macabreandcheese.com/#contact
+- Website: https://www.macabreandcheese.com
+- Menu preview: https://www.macabreandcheese.com/#creations
+- Contact and booking inquiries: https://www.macabreandcheese.com/#contact
 - Instagram: https://www.instagram.com/macabreandcheesetruck/
 - Email: mailto:macabreandcheesetruck@gmail.com
 
 ## Crawling
 
-- Sitemap: https://macabreandcheese.com/sitemap.xml
-- Robots policy: https://macabreandcheese.com/robots.txt
+- Sitemap: https://www.macabreandcheese.com/sitemap.xml
+- Robots policy: https://www.macabreandcheese.com/robots.txt

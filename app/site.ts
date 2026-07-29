@@ -1,4 +1,4 @@
-export const siteUrl = "https://macabreandcheese.com";
+export const siteUrl = "https://www.macabreandcheese.com";
 export const siteName = "Macabre & Cheese";
 export const legalName = "Macabre & Cheese LLC";
 export const siteDescription =

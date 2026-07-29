@@ -6,7 +6,7 @@ This is the basic setup for Macabre & Cheese. Complete it in order.
 
 - [ ] Choose the Google account that will permanently own the business profile.
 - [ ] Keep the real business name written exactly as `Macabre & Cheese`.
-- [ ] Make sure `https://macabreandcheese.com` is live.
+- [ ] Make sure `https://www.macabreandcheese.com` is live.
 - [ ] Get a public business phone number.
 - [ ] Take clear photos of the truck, food, menu, and permanent truck signage.
 - [ ] Decide which locations you actually serve before publishing any service area.
@@ -23,7 +23,7 @@ Google requires an eligible business to meet customers in person during its stat
 3. Select **Add your business** or **Manage now**.
 4. Enter the name exactly as `Macabre & Cheese`.
 5. Choose **Food truck** as the primary category if Google offers it.
-6. Add `https://macabreandcheese.com` as the website.
+6. Add `https://www.macabreandcheese.com` as the website.
 7. Add the public business phone number.
 8. Add only real operating hours.
 9. Add only locations or service areas where the truck is currently available.
@@ -78,9 +78,9 @@ Do not put links, prices, sales, or promotional claims in the description.
 6. Add that record at the company where the domain's DNS is managed.
 7. Return to Search Console and select **Verify**.
 8. Open **Sitemaps**.
-9. Submit `https://macabreandcheese.com/sitemap.xml`.
+9. Submit `https://www.macabreandcheese.com/sitemap.xml`.
 10. Open **URL inspection**.
-11. Inspect `https://macabreandcheese.com`.
+11. Inspect `https://www.macabreandcheese.com`.
 12. Select **Request indexing**.
 
 ## 7. Ask for reviews after serving real customers
@@ -114,4 +114,3 @@ Update the website and Google profile together whenever the menu, hours, phone n
 - [Search Console website verification](https://support.google.com/webmasters/answer/34592)
 - [Submit a sitemap](https://support.google.com/webmasters/answer/7451001)
 - [Google review guidance](https://support.google.com/business/answer/3474122)
-
