@@ -42,9 +42,9 @@ export const metadata: Metadata = {
     locale: "en_US",
     images: [
       {
-        url: "/backgroudns/square.png",
-        width: 1254,
-        height: 1254,
+        url: "/backgroudns/LongThumbail.png",
+        width: 1090,
+        height: 464,
         alt: "Macabre & Cheese gothic comfort food truck artwork",
       },
     ],
@@ -54,7 +54,14 @@ export const metadata: Metadata = {
     card: "summary_large_image",
     title: "Macabre & Cheese Food Truck",
     description: "Eat your feelings. Feed your shadows.",
-    images: ["/backgroudns/square.png"],
+    images: [
+      {
+        url: "/backgroudns/LongThumbail.png",
+        width: 1090,
+        height: 464,
+        alt: "Macabre & Cheese gothic comfort food truck artwork",
+      },
+    ],
   },
 };
 
