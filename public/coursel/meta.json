@@ -1,0 +1,22 @@
+[
+    {
+        "title": "Witches Biscoff Brew",
+        "description": "A spiced speculoos potion sealed in a cookie crust.",
+        "image": "public/coursel/biscoffwitch.jpeg"
+    },
+    {
+        "title": "The Classic Fairytale",
+        "description": "A classic vanilla bean cheesecake in a golden graham cracker crust.",
+        "image": "public/coursel/ClassicFairy.jpeg"
+    },
+    {
+        "title": "The Stout Friar",
+        "description": "Sharp Cotswold cheddar, truffle cheese and stout béchamel.",
+        "image": "public/coursel/Astout.jpeg"
+    },
+    {
+        "title": "The Slayer",
+        "description": "Creamy mozzarella provolone Mac topped with San Marzano tomato and roasted garlic sauce.",
+        "image": "public/coursel/SlayerDayer.jpeg"
+    }
+]

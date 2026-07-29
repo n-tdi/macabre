@@ -1,65 +1,235 @@
 import Image from "next/image";
 
+import menuItems from "@/public/coursel/meta.json";
+
+import styles from "./page.module.css";
+
+const email = "macabreandcheesetruck@gmail.com";
+const instagramUrl = "https://www.instagram.com/macabreandcheesetruck/";
+
+function ArrowIcon() {
+  return (
+    <svg aria-hidden="true" viewBox="0 0 20 20">
+      <path d="M3 10h13M11 5l5 5-5 5" />
+    </svg>
+  );
+}
+
+function MailIcon() {
+  return (
+    <svg aria-hidden="true" viewBox="0 0 24 24">
+      <path d="M3.5 6.5h17v11h-17z" />
+      <path d="m4 7 8 6 8-6" />
+    </svg>
+  );
+}
+
+function InstagramIcon() {
+  return (
+    <svg aria-hidden="true" viewBox="0 0 24 24">
+      <rect x="3.5" y="3.5" width="17" height="17" rx="5" />
+      <circle cx="12" cy="12" r="4" />
+      <circle cx="17.5" cy="6.7" r=".8" className={styles.iconDot} />
+    </svg>
+  );
+}
+
+function MoonMark() {
+  return (
+    <svg aria-hidden="true" viewBox="0 0 120 120">
+      <path d="M72 20c-23 6-36 32-27 54 8 22 31 33 51 25-10 13-25 21-42 21C24 120 0 95 0 65S24 10 54 10c6 0 12 1 18 3Z" />
+      <path d="m90 26 3 7 7 3-7 3-3 7-3-7-7-3 7-3 3-7Zm20 29 2 5 5 2-5 2-2 5-2-5-5-2 5-2 2-5Z" />
+    </svg>
+  );
+}
+
 export default function Home() {
   return (
-    <div className="flex flex-col flex-1 items-center justify-center bg-zinc-50 font-sans dark:bg-black">
-      <main className="flex flex-1 w-full max-w-3xl flex-col items-center justify-between py-32 px-16 bg-white dark:bg-black sm:items-start">
-        <Image
-          className="dark:invert"
-          src="/next.svg"
-          alt="Next.js logo"
-          width={100}
-          height={20}
-          priority
-        />
-        <div className="flex flex-col items-center gap-6 text-center sm:items-start sm:text-left">
-          <h1 className="max-w-xs text-3xl font-semibold leading-10 tracking-tight text-black dark:text-zinc-50">
-            To get started, edit the page.tsx file.
-          </h1>
-          <p className="max-w-md text-lg leading-8 text-zinc-600 dark:text-zinc-400">
-            Looking for a starting point or more instructions? Head over to{" "}
-            <a
-              href="https://vercel.com/templates?framework=next.js&utm_source=create-next-app&utm_medium=appdir-template-tw&utm_campaign=create-next-app"
-              className="font-medium text-zinc-950 dark:text-zinc-50"
-            >
-              Templates
-            </a>{" "}
-            or the{" "}
-            <a
-              href="https://nextjs.org/learn?utm_source=create-next-app&utm_medium=appdir-template-tw&utm_campaign=create-next-app"
-              className="font-medium text-zinc-950 dark:text-zinc-50"
-            >
-              Learning
-            </a>{" "}
-            center.
-          </p>
-        </div>
-        <div className="flex flex-col gap-4 text-base font-medium sm:flex-row">
-          <a
-            className="flex h-12 w-full items-center justify-center gap-2 rounded-full bg-foreground px-5 text-background transition-colors hover:bg-[#383838] dark:hover:bg-[#ccc] md:w-[158px]"
-            href="https://vercel.com/new?utm_source=create-next-app&utm_medium=appdir-template-tw&utm_campaign=create-next-app"
-            target="_blank"
-            rel="noopener noreferrer"
-          >
-            <Image
-              className="dark:invert"
-              src="/vercel.svg"
-              alt="Vercel logomark"
-              width={16}
-              height={16}
-            />
-            Deploy Now
+    <div className={styles.page} id="top">
+      <a className={styles.skipLink} href="#creations">
+        Skip to our creations
+      </a>
+
+      <header className={styles.header}>
+        <div className={styles.headerInner}>
+          <a className={styles.brand} href="#top" aria-label="Macabre and Cheese, home">
+            <span className={styles.brandName}>
+              Macabre <i>&amp;</i> Cheese
+            </span>
           </a>
-          <a
-            className="flex h-12 w-full items-center justify-center rounded-full border border-solid border-black/[.08] px-5 transition-colors hover:border-transparent hover:bg-black/[.04] dark:border-white/[.145] dark:hover:bg-[#1a1a1a] md:w-[158px]"
-            href="https://nextjs.org/docs?utm_source=create-next-app&utm_medium=appdir-template-tw&utm_campaign=create-next-app"
-            target="_blank"
-            rel="noopener noreferrer"
-          >
-            Documentation
-          </a>
+
+          <nav className={styles.nav} aria-label="Main navigation">
+            <a href="#creations">Creations</a>
+            <a className={styles.navContact} href="#contact">
+              Summon us
+            </a>
+          </nav>
         </div>
+      </header>
+
+      <main>
+        <section className={styles.hero} aria-labelledby="hero-title">
+          <svg
+            className={styles.noodleVine}
+            aria-hidden="true"
+            viewBox="0 0 720 220"
+            preserveAspectRatio="none"
+          >
+            <path d="M-10 145c88-18 96-91 171-88 76 4 53 105 125 109 70 4 75-121 149-113 77 9 41 119 121 115 64-3 75-71 174-81" />
+            <path d="M112 72c-25-9-44-2-55 19 29 7 48 1 55-19Zm392 80c25 8 43 0 53-22-29-5-47 2-53 22Z" />
+          </svg>
+
+          <div className={styles.heroInner}>
+            <div className={styles.heroCopy}>
+              <h1 id="hero-title" className={styles.heroTitle}>
+                <span>Macabre</span>
+                <em>&amp;</em>
+                <span>Cheese</span>
+              </h1>
+
+              <p className={styles.tagline}>Eat your feelings. Feed your shadows.</p>
+
+              <div className={styles.heroActions}>
+                <a className={styles.primaryButton} href="#creations">
+                  Browse the creations <ArrowIcon />
+                </a>
+                <a className={styles.textButton} href={`mailto:${email}`}>
+                  <MailIcon /> Email the coven
+                </a>
+              </div>
+            </div>
+
+            <div className={styles.seal} aria-hidden="true">
+              <div className={styles.sealOrbit} />
+              <div className={styles.sealCenter}>
+                <MoonMark />
+                <span>Arriving</span>
+                <strong>Soon</strong>
+              </div>
+            </div>
+          </div>
+
+          <a className={styles.scrollCue} href="#creations">
+            <span>Meet the menu</span>
+            <i aria-hidden="true" />
+          </a>
+        </section>
+
+        <section className={styles.creations} id="creations" aria-labelledby="creations-title">
+          <div className={styles.sectionHeading}>
+            <div>
+              <p className={styles.sectionKicker}>A taste of what&apos;s to come</p>
+              <h2 id="creations-title">From the cauldron</h2>
+            </div>
+            <p className={styles.sectionIntro}>
+              We&apos;re coming soon. Here&apos;s a first look at the menu.
+            </p>
+          </div>
+
+          <div className={styles.carouselWrap}>
+            <div
+              className={styles.carousel}
+              role="region"
+              aria-label="Featured creations"
+              tabIndex={0}
+            >
+              {menuItems.map((item, index) => (
+                <article
+                  className={styles.menuCard}
+                  id={`creation-${index + 1}`}
+                  key={item.title}
+                >
+                  <Image
+                    className={styles.menuImage}
+                    src={`/${item.image.replace(/^public\//, "")}`}
+                    alt={`${item.title}, one of the featured Macabre and Cheese creations`}
+                    fill
+                    sizes="(max-width: 640px) 82vw, (max-width: 1024px) 48vw, 390px"
+                    priority={index === 0}
+                  />
+                  <div className={styles.cardShade} />
+                  <div className={styles.cardContent}>
+                    <span className={styles.cardNumber}>{String(index + 1).padStart(2, "0")}</span>
+                    <h3>{item.title}</h3>
+                    <p>{item.description}</p>
+                  </div>
+                  <span className={styles.cardType}>
+                    {index < 2 ? "Cheesecake" : "Mac & cheese"}
+                  </span>
+                </article>
+              ))}
+            </div>
+
+            <div className={styles.carouselMeta}>
+              <p>
+                <span aria-hidden="true">↔</span> Swipe or drag to explore
+              </p>
+              <nav className={styles.carouselDots} aria-label="Choose a featured creation">
+                {menuItems.map((item, index) => (
+                  <a href={`#creation-${index + 1}`} key={item.title}>
+                    <span className={styles.srOnly}>View {item.title}</span>
+                  </a>
+                ))}
+              </nav>
+            </div>
+          </div>
+        </section>
+
+        <section className={styles.contact} id="contact" aria-labelledby="contact-title">
+          <div className={styles.contactOrnament} aria-hidden="true">
+            <span />
+            <MoonMark />
+            <span />
+          </div>
+
+          <div className={styles.contactGrid}>
+            <div className={styles.contactCopy}>
+              <p className={styles.sectionKicker}>Stay close to the shadows</p>
+              <h2 id="contact-title">Be there for the first bite.</h2>
+            </div>
+
+            <div className={styles.contactDetails}>
+              <p>
+                The truck is still coming soon. Send us a note for launch news,
+                future bookings, or to simply say hello!
+              </p>
+              <a className={styles.emailLink} href={`mailto:${email}`}>
+                <span>
+                  <small>Email us</small>
+                  {email}
+                </span>
+                <ArrowIcon />
+              </a>
+              <a
+                className={styles.socialLink}
+                href={instagramUrl}
+                target="_blank"
+                rel="noreferrer"
+              >
+                <InstagramIcon /> @macabreandcheesetruck
+              </a>
+            </div>
+          </div>
+        </section>
       </main>
+
+      <footer className={styles.footer}>
+        <div className={styles.footerTop}>
+          <a className={styles.footerBrand} href="#top">
+            Macabre <i>&amp;</i> Cheese
+          </a>
+          <p>Eat your feelings. Feed your shadows.</p>
+        </div>
+        <div className={styles.footerBottom}>
+          <p>© {new Date().getFullYear()} Macabre &amp; Cheese LLC</p>
+          <div>
+            <a href={`mailto:${email}`}>Email</a>
+            <a href={instagramUrl} target="_blank" rel="noreferrer">
+              Instagram
+            </a>
+          </div>
+        </div>
+      </footer>
     </div>
   );
 }
